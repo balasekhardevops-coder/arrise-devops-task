@@ -7,6 +7,9 @@ Write the policy JSON and explain in NOTES.md what you deliberately left out and
 
 
 
+# IAM Policy
+
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -80,6 +83,7 @@ Write the policy JSON and explain in NOTES.md what you deliberately left out and
     }
   ]
 }
+```
 
 
 The CI user is granted only the permissions required to push images to one ECR repository, register ECS task definitions, update one specific ECS service, pass only the required ECS task/execution roles, and read artifacts from one specific S3 bucket.
